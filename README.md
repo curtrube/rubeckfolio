@@ -1,2 +1,2 @@
 # rubeckfolio
-Curtis Rubeck Portfolio Site
+New Curtis Rubeck Portfolio Site
