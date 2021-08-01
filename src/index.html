@@ -20,9 +20,10 @@
   </head>
 
   <body class="d-flex flex-column h-100">
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="#">Curtis Rubeck</a>
+        <a class="navbar-brand" href="#home">Curtis Rubeck</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,16 +37,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item lead">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
             </li>
-            <li class="nav-item lead">
-              <a class="nav-link" href="#mySkills">Skills</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item lead">
+            <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
             </li>
-            <li class="nav-item lead">
+            <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
@@ -55,87 +58,95 @@
 
     <main class="flex-shrink-0">
       <div class="container">
-        <!-- Introduction Section-->
-        <section>
-          <div class="row row-cols-1 row-cols-md-2 h-100 minHeight">
-            <div class="col d-flex">
-              <div>
-                <img src="./img/curtis_headshot2.png" alt="Curtis Headshot" />
-              </div>
-            </div>
-            <div class="col d-flex">
-              <div class="text-light" style="border: 1px red solid">
+        <!-- Introduction -->
+        <section id="home">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 h-100 minHeight">
+              <div
+                class="col-6 d-flex justify-content-center align-items-center"
+              >
                 <div>
-                  <span class="pill__hello badge rounded-pill bg-primary"
-                    >Hello There!</span
-                  >
-                  <h1 class="display-1 mt-2">Curits Rubeck</h1>
-                  <h3 class="lead">
-                    Full Stack Developer and Cloud Consultant
-                  </h3>
+                  <img src="./img/curtis_headshot2.png" alt="Curtis Headshot" />
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-light">
+                  <div>
+                    <span class="badge badge--intro">Hello There!</span>
+                    <h1 class="mt-2">Curits Rubeck</h1>
+                    <h4>Full Stack Developer and Cloud Consultant</h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <!-- About Me -->
-        <section>
-          <div class="row">
-            <div class="col">
-              <div class="text-light h-100">
-                <h3 class="display-6">About Me</h3>
-                <p>
-                  I'm a self-taught Web Developer with an extensive background
-                  in Cloud and Network Engineering. After Covid-19 struck in the
-                  U.S. I decided to spend my time in lockdown learning
-                  Full-Stack Web Development. I quickly found a passion for
-                  building cool applications
-                </p>
+        <section id="about">
+          <div class="container">
+            <div class="row h100 minHeight">
+              <div class="col d-flex justify-content-center align-items-center">
+                <div class="text-light">
+                  <h3 class="display-6">About Me</h3>
+                  <p>
+                    I'm a self-taught Web Developer with an extensive background
+                    in Cloud and Network Engineering. After Covid-19 struck in
+                    the U.S. I decided to spend my time in lockdown learning
+                    Full-Stack Web Development. I quickly found a passion for
+                    building cool applications
+                  </p>
+                </div>
               </div>
+              <div class="col"></div>
             </div>
-            <div class="col"></div>
           </div>
         </section>
 
         <!-- Skills -->
-        <section>
-          <a id="mySkills"></a>
-          <div class="row">
-            <div class="col">
-              <div class="text-light">
-                <h3 class="display-6 text-center">My Skills</h3>
+        <section id="skills">
+          <div class="container text-light minHeight">
+            <div>
+              <div class="row flex-grow-1">
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="text-center">
+                    <h3 class="display-6">My Skills</h3>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row text-light text-center lead row-cols-1 row-cols-md-3">
-            <div class="col">
-              <div>
-                <ul class="list-unstyled">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col">
-              <div>
-                <ul class="list-unstyled">
-                  <li>C#/.NET</li>
-                  <li>SQL</li>
-                  <li>Python</li>
-                  <li>Node.js</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col">
-              <div>
-                <ul class="list-unstyled">
-                  <li>AWS</li>
-                  <li>Azure Devops</li>
-                  <li>Docker</li>
-                  <li>Terraform</li>
-                </ul>
+              <div class="row">
+                <div class="col-4 text-center">
+                  <div>
+                    <ul class="list-unstyled">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>Javascript</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div>
+                    <ul class="list-unstyled">
+                      <li>C# / .NET</li>
+                      <li>Python</li>
+                      <li>Node.js</li>
+                      <li>SQL</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div>
+                    <ul class="list-unstyled">
+                      <li>AWS</li>
+                      <li>Azure DevOps</li>
+                      <li>Docker</li>
+                      <li>Terraform</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

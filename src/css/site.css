@@ -1,3 +1,10 @@
+:root {
+  --color-primary: #3a86ff;
+  --color-secondary: ;
+  --color-accent: ;
+  --color-body: #232a34;
+}
+
 main > .container {
   padding: 60px 15px 0;
 }
@@ -9,15 +16,30 @@ main > .container {
 }
 
 body {
-  background-color: #232a34;
+  background-color: var(--color-body);
 }
 
-/* Container height */
+/* Container Height */
 .minHeight {
-  min-height: 50vh;
+  min-height: 60vh;
 }
 
-.pill__hello {
+/* Badges */
+.badge {
   font-size: 1rem;
-  padding: 1rem;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--intro {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 20px 20px 0 20px;
+}
+
+.badge--download {
+  background: var(--color-primary);
+  color: #fff;
 }
