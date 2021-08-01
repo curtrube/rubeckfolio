@@ -12,6 +12,12 @@ body {
   background-color: #232a34;
 }
 
+/* Container height */
 .minHeight {
-  min-height: 100vh;
+  min-height: 50vh;
+}
+
+.pill__hello {
+  font-size: 1rem;
+  padding: 1rem;
 }
