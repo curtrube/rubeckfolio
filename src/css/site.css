@@ -11,3 +11,7 @@ main > .container {
 body {
   background-color: #232a34;
 }
+
+.minHeight {
+  min-height: 100vh;
+}
