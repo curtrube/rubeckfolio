@@ -56,17 +56,21 @@
     <main class="flex-shrink-0">
       <div class="container">
         <!-- Introduction-->
-        <div class="row mt-5">
+        <div class="row mt-5 row-cols-1 row-cols-md-2">
           <div class="col">
-            <div class="content">
-              <img src="./img/curtis_headshot2.png" alt="" />
+            <div class="d-flex justify-content-center">
+              <img
+                style="border-radius: 200px"
+                src="./img/curtis_headshot2.png"
+                alt=""
+              />
             </div>
           </div>
           <div class="col">
-            <div class="content text-light mt-5" style="border: 1px red solid">
+            <div class="text-light" style="border: 1px red solid">
               <span class="badge rounded-pill bg-primary">Hello There!</span>
               <h1 class="display-1">Curits Rubeck</h1>
-              <h3>Full Stack Developer and Cloud Consultant</h3>
+              <h3 class="lead">Full Stack Developer and Cloud Consultant</h3>
             </div>
           </div>
         </div>
@@ -74,7 +78,7 @@
         <section>
           <div class="row">
             <div class="col">
-              <div class="content text-light">
+              <div class="text-light h-100">
                 <h3 class="display-6">About Me</h3>
                 <p>
                   I'm a self-taught Web Developer with an extensive background
@@ -93,14 +97,14 @@
         <section>
           <div class="row">
             <div class="col">
-              <div class="content text-light">
+              <div class="text-light">
                 <h3 class="display-6 text-center">My Skills</h3>
               </div>
             </div>
           </div>
-          <div class="row text-light text-center lead">
+          <div class="row text-light text-center lead row-cols-1 row-cols-md-3">
             <div class="col">
-              <div class="content">
+              <div>
                 <ul class="list-unstyled">
                   <li>HTML</li>
                   <li>CSS</li>
@@ -110,7 +114,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="content">
+              <div>
                 <ul class="list-unstyled">
                   <li>C#/.NET</li>
                   <li>SQL</li>
@@ -120,7 +124,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="content">
+              <div>
                 <ul class="list-unstyled">
                   <li>AWS</li>
                   <li>Azure Devops</li>
@@ -136,8 +140,24 @@
         <section>
           <div class="row">
             <div class="col">
-              <div class="content text-center text-light">
+              <div class="text-center text-light">
                 <h3 class="display-6">Projects</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row text-light">
+            <div class="col">
+              <div>
+                <h3>Bug Tracker</h3>
+                <p>
+                  A software issue tracker to track projects and resolve bugs.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="bg-secondary">
+                <p>Software Bug Tracker</p>
               </div>
             </div>
           </div>
@@ -145,7 +165,7 @@
       </div>
     </main>
 
-    <footer class="footer mt-auto py-3 bg-secondary sticky-footer">
+    <footer class="footer mt-auto py-3 bg-primary sticky-footer">
       <div class="container-fluid text-center">
         <span class="text-light">Place sticky footer content here.</span>
       </div>
