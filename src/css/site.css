@@ -17,6 +17,7 @@ main > .container {
 
 body {
   background-color: var(--color-body);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Container Height */
@@ -42,4 +43,9 @@ body {
 .badge--download {
   background: var(--color-primary);
   color: #fff;
+}
+
+/* Section Headings */
+.section__header {
+  font-family: 'Quicksand', sans-serif;
 }
